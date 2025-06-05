@@ -3,3 +3,6 @@ torchvision
 datasets
 timm
 transformers
+streamlit
+huggingface_hub
+pillow
