@@ -2,7 +2,7 @@ import os
 import torch
 from transformers import GPT2Tokenizer
 from PIL import Image
-from .src import ImageCaptioningModel, generate_caption
+from src import ImageCaptioningModel, generate_caption
 from torchvision import transforms
 
 device = 'mps' if torch.cuda.is_available() else 'cpu'
@@ -23,7 +23,7 @@ image_transforms = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
-image_path = "path_to_your_image.jpg"  
+image_path = "image.png"  
 image = Image.open(image_path).convert("RGB")
 image = image_transforms(image).unsqueeze(0).to(device)  
 

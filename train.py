@@ -1,7 +1,7 @@
 import os
 import torch
 from transformers import GPT2Tokenizer
-from .src import ImageCaptioningModel, generate_caption, load_data, FlickrImageCaptionDataset
+from src import ImageCaptioningModel, generate_caption, load_data, FlickrImageCaptionDataset
 from torch.amp import autocast, GradScaler
 from torch.utils.data import DataLoader
 from torchvision import transforms
