@@ -19,7 +19,7 @@ train_dataloader = DataLoader(flickrdataset, batch_size=96, shuffle=True)
 num_batches = len(train_dataloader)
 print(num_batches)
 
-device = 'mps' if torch.cuda.is_available() else 'cpu'
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
 tokenizer.pad_token = tokenizer.eos_token
 
@@ -59,7 +59,7 @@ for epoch in range(epochs):
             model.eval()
             with torch.no_grad():
                 sample_image = images[0].cpu()
-                generated_caption = generate_caption(model, sample_image, tokenizer,device)
+                generated_caption = generate_caption(model, sample_image, tokenizer, device)
                 print(f"Generated: {generated_caption}")
                 print(f"Expected: {captions[0]}")
             model.train()
