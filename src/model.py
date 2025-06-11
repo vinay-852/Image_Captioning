@@ -57,7 +57,7 @@ class ImageCaptioningModel(nn.Module):
 
         vision_embeds_proj = self.vision_transformer_encoder(vision_embeds_proj)
 
-        text_embeds = self.text_decoder.transformer.wte(input_ids)
+        text_embeds = self.text_decoder.transformer.wte(input_ids) #word token embeddings
         gpt2_inputs_embeds = torch.cat([vision_embeds_proj, text_embeds], dim=1)
 
         if labels is not None:
