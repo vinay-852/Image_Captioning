@@ -6,15 +6,15 @@ This project implements an **Image Captioning** system that generates natural la
 
 ## Key Features
 
-Uses **ViT (vit\_base\_patch16\_224)** for robust visual feature extraction
+* Uses **ViT (vit\_base\_patch16\_224)** for robust visual feature extraction
 
-Uses **GPT-2** for rich, coherent language generation
+* Uses **GPT-2** for rich, coherent language generation
 
-Custom projection and transformer modules to bridge image and text domains
+* Custom projection and transformer modules to bridge image and text domains
 
-Ready-to-run **Streamlit** app for interactive demos
+* Ready-to-run **Streamlit** app for interactive demos
 
-Modular and customizable architecture
+* Modular and customizable architecture
 
 ---
 
@@ -102,7 +102,7 @@ Yes! Increase or decrease `n_prefix_tokens` depending on how much visual context
 
 ---
 
-## 🔧 Training & Customization
+## Training & Customization
 
 * Train the model using **cross-entropy loss** on your dataset of images and captions.
 * Adjust hyperparameters:
@@ -114,7 +114,7 @@ Yes! Increase or decrease `n_prefix_tokens` depending on how much visual context
 
 ---
 
-## 📈 Results & Usage
+## Results & Usage
 
 * At inference time, the model generates a natural language caption **conditioned on the image’s visual representation**.
 * Ideal for applications like:
