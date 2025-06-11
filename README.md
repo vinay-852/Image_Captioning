@@ -6,30 +6,34 @@ This project implements an **Image Captioning** system that generates natural la
 
 ## Key Features
 
-✅ Uses **ViT (vit\_base\_patch16\_224)** for robust visual feature extraction
-✅ Uses **GPT-2** for rich, coherent language generation
-✅ Custom projection and transformer modules to bridge image and text domains
-✅ Ready-to-run **Streamlit** app for interactive demos
-✅ Modular and customizable architecture
+Uses **ViT (vit\_base\_patch16\_224)** for robust visual feature extraction
+
+Uses **GPT-2** for rich, coherent language generation
+
+Custom projection and transformer modules to bridge image and text domains
+
+Ready-to-run **Streamlit** app for interactive demos
+
+Modular and customizable architecture
 
 ---
 
 ## Installation
 
-1️⃣ **Clone the repository:**
+1 **Clone the repository:**
 
 ```bash
 git clone https://github.com/vinay-852/Image_Captioning.git
 cd Image_Captioning
 ```
 
-2️⃣ **Install dependencies:**
+2 **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3️⃣ **Launch the Streamlit app:**
+3 **Launch the Streamlit app:**
 
 ```bash
 streamlit run app.py
@@ -37,7 +41,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 The model is trained on the **Flickr31k** dataset, known for its diverse and descriptive image captions.
 
